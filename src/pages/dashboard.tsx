@@ -7,6 +7,9 @@ const Chart = dynamic(() => import('react-apexcharts'), {
   ssr: false,
 })
 
+const type: 'datetime' = 'datetime';
+// TS ¯\_(ツ)_/¯ 
+
 const options = {
   chart: {
     toolbar: {
@@ -27,7 +30,7 @@ const options = {
     enabled: false
   },
   xaxis: {
-    type: 'datetime',
+    type,
     axisBorder: {
       color: theme.colors.gray[600],
     },
