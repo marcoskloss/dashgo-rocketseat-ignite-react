@@ -62,7 +62,7 @@ const series = [
   {name: 'series1', data: [31, 120, 33, 5, 26, 18, 61]}
 ];  
 
-export default function Dashboard() {
+export default function Dashboard() {  
   return (
     <Flex direction='column' h='100vh'>
       <Header />
@@ -72,7 +72,7 @@ export default function Dashboard() {
 
         <SimpleGrid flex='1' gap='4' minChildWidth='320px' align='flex-start'>
           <Box
-            p='8'
+            p={['5', '8']}
             bg='gray.800'
             borderRadius={8}
             pb='4'
@@ -81,7 +81,7 @@ export default function Dashboard() {
             <Chart options={options} series={series} type='area' height={160} />
           </Box>
           <Box
-            p='8'
+            p={['5', '8']}
             bg='gray.800'
             borderRadius={8}
             pb='4'
