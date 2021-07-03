@@ -114,7 +114,7 @@ export default function UserList() {
                             </Text>
                           </Box>
                         </Td>
-                        {isWideVersion && <Td>{user.createdAt}</Td>}
+                        {isWideVersion && <Td>{user.created_at}</Td>}
                         {isWideVersion && (
                           <Td>
                             <Button 
